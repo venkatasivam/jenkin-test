@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Success page</title>
+</head>
+<body>
+<div th:switch="${success}"> 
+  <p th:case="'success'">Employee record added successfully!</p>
+  <p th:case="'fail'">Failed in adding employee record!</p>
+</div>
+</body>
+</html>
